@@ -1,6 +1,6 @@
 # Demo
 
-Demo: [https://crentix.github.io/weather-app/]
+Demo: [https://crentix.github.io/weather-app/](https://crentix.github.io/weather-app/)
 
 ## Getting Started with Create React App
 
