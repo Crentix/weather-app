@@ -1,0 +1,14 @@
+.weatherInfo {
+  display: flex;
+  margin-top: 4rem;
+  height: calc(100% - 12rem - 2px);
+}
+
+.left {
+  flex: 1;
+  margin-right: 6rem;
+}
+
+.right {
+  flex: 3;
+}

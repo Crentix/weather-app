@@ -1,0 +1,20 @@
+.forecast {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.forecastWeekday {
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.temps {
+  margin-top: .5rem;
+  display: flex;
+}
+
+.min-temp {
+  margin-left: .5rem;
+  color: var(--grey);
+}

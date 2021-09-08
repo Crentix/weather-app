@@ -1,0 +1,67 @@
+.highlights {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  width: 300px;
+  height: 220px;
+}
+
+.skyline {
+  position: relative;
+  width: 300px;
+  height: 120px;
+  background-size: 120%;
+  background-position: -30px -30px;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.location {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0px 6px 12px #000;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.time {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.weekday {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+  margin-right: .5rem;
+}
+
+.timestamp {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--grey);
+  margin: 0;
+}
+
+.temp {
+  font-size: 5rem;
+  margin: 0;
+  margin-bottom: .5rem;
+}
+
+.stats > div {
+  display: flex;
+  align-items: center;
+}
+
+.stats > div > svg {
+  margin: 0 .5rem;
+}

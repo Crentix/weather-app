@@ -1,0 +1,68 @@
+.today {
+  margin-bottom: 4rem;
+}
+
+h3 {
+  margin-left: 2.5rem;
+}
+
+.details > div{
+  display: flex;
+}
+
+.min-max, .sunrise-sunset {
+  flex: 3
+}
+
+.wind, .humidity, .rain {
+  flex: 2;
+}
+
+.detail {
+  height: 180px;
+  margin: 1.5rem 2.5rem;
+  border-radius: 5px;
+  padding: .5rem 1rem;
+  position: relative;
+}
+
+.detail > p {
+  color: var(--grey);
+}
+
+.detail > div {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.detail > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detail > div p {
+  font-size: 2.5rem;
+}
+
+.detail > div span {
+  font-size: 1.2rem;
+  color: var(--grey);
+  margin-left: .5rem;
+}
+
+.humidity > div, .rain > div {
+  flex-direction: column;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 2.5rem;
+}

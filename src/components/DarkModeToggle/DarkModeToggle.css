@@ -1,0 +1,21 @@
+.dark-mode-toggler {
+  position: absolute;
+  right: 20px;
+  top: 2rem;
+  height: calc(2rem + 2px);
+  display: flex;
+  align-items: center;
+}
+
+svg {
+  cursor: pointer;
+  user-select: none;
+}
+
+.moon {
+  stroke: var(--white);
+}
+
+.sun {
+  stroke: var(--black);
+}
