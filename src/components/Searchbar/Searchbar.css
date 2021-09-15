@@ -42,3 +42,30 @@ input:active, input:focus {
   font-size: .8rem;
   transition: opacity 100ms;
 }
+
+
+@media screen and (max-width: 1420px) {
+  input {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  input {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  input {
+    width: 70%;
+    position: relative;
+    left: 10px;
+  }
+  .x {
+    left: calc(-2rem + 10px);
+  }
+  .search {
+    display: none;
+  }
+}

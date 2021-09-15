@@ -2,15 +2,16 @@ import './WeatherIcon.css';
 
 function WeatherIcon({ id, width, height }) {
 
-  const style = {
+  const style = (width & height) ? {
     width: `${width}px`,
     height: `${height}px`
+  } : {
+    width: `100%`,
+    height: `100%`
   }
 
   return (
-    <div>
-      <img src={getWeatherIcon(id)} alt="weather icon" style={style}/>
-    </div>
+    <img src={getWeatherIcon(id)} alt="weather icon" style={style}/>
   )
 }
 

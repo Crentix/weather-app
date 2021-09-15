@@ -18,3 +18,40 @@
   margin-left: .5rem;
   color: var(--grey);
 }
+
+.forecastIcon {
+  width: 70px;
+  height: 50px;
+}
+
+@media screen and (min-width: 2560px) {
+  .forecastIcon {
+    width: 120px;
+    height: 100px;
+  }
+}
+
+
+@media screen and (max-width: 760px) {
+  .forecast {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+
+  .forecastWeekday {
+    margin-bottom: 0;
+    flex: 1
+  }
+
+  .forecastIcon {
+    width: 50px;
+    height: 40px;
+    flex: 2;
+  }
+  
+  .temps {
+    flex: 1;
+  }
+
+}

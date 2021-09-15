@@ -10,6 +10,12 @@
   height: 220px;
 }
 
+.general {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .skyline {
   position: relative;
   width: 300px;
@@ -57,11 +63,90 @@
   margin-bottom: .5rem;
 }
 
-.stats > div {
+.stats > div > div:first-of-type {
   display: flex;
   align-items: center;
 }
 
-.stats > div > svg {
+.stats > div > div > svg {
   margin: 0 .5rem;
+}
+
+@media screen and (max-width: 1180px) {
+  .highlights {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .stats {
+    display: flex;
+  }
+
+  .stats .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon {
+    width: 140px;
+    height: 120px;
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .highlights {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .temp {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .general {
+    align-items: initial;
+  }
+
+  .general > div:first-of-type {
+    margin-bottom: .5rem;
+  }
+
+  .general > div {
+    display: flex;
+    align-items: center;
+  }
+
+  .general > div > svg {
+    margin-right: 1rem;
+  }
+
+  .general > div > p {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .location {
+    position: relative;
+    top: unset;
+    left: unset;
+    transform: unset;
+    text-shadow: unset;
+  }
+
+  .time {
+    margin: 0
+  }
+
+  .stats {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
 }

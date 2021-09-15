@@ -1,4 +1,4 @@
-.today {
+.today{
   margin-bottom: 4rem;
 }
 
@@ -61,8 +61,135 @@ h3 {
   flex-direction: column;
 }
 
+.detail > div:last-of-type > p:last-of-type {
+  word-break: break-all;
+}
+
 ul {
   display: flex;
   justify-content: space-between;
   margin-right: 2.5rem;
+}
+
+@media screen and (max-width: 1420px) {
+
+  .week {
+    margin-bottom: 14rem;
+  }
+
+  .detail {
+    margin: 1rem 1.5rem;
+    height: 160px;
+  }
+  .detail > div p {
+    font-size: 1.5rem;
+  }
+  .detail > div span {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .details > div {
+    display: unset;
+  }
+  .detail {
+    height: 160px;
+    margin: 1.5rem 2.5rem
+  }
+  .detail > div p {
+    font-size: 2.5rem;
+    margin-left: .5rem;
+  }
+  .detail > div > div {
+    flex-direction: row;
+  }
+  .detail > div svg {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  h3 {
+    margin-left: .5rem;
+  }
+
+  .details {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      ". ."
+      ". ."
+      ". ."
+      ". .";
+  }
+
+  .detail {
+    margin: .5rem;
+  }
+
+  .detail > div {
+    position: relative;
+    top: unset;
+    left: unset;
+    transform: unset;
+  }
+  .detail > div:first-of-type {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: .5rem;
+  }
+
+  .detail > div:first-of-type > svg {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .detail > div:last-of-type {
+    align-items: flex-end;
+    flex-direction: column;
+  }
+
+  .detail > div:last-of-type > p:last-of-type {
+    font-size: .9rem;
+    color: var(--grey);
+  }
+}
+
+@media screen and (max-width: 760px) {
+  ul {
+    flex-direction: column;
+  }
+
+}
+
+@media screen and (max-width: 380px) {
+  .detail > div p {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .detail > div p {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .detail {
+    height: 280px;
+    padding: 1.5rem 2rem
+  }
+
+  .detail > p {
+    font-size: 1.2rem;
+  }
+
+  .detail > div p {
+    font-size: 3.5rem;
+  }
 }

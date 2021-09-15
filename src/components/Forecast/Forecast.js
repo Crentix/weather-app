@@ -5,7 +5,9 @@ function Forecast({ data }) {
   return (
     <div className="forecast">
       <p className="forecastWeekday">{getWeekday(data.time)}</p>
-      <WeatherIcon id={data.weatherId} width={70} height={50}/>
+      <div className="forecastIcon">
+        <WeatherIcon id={data.weatherId}/>
+      </div>
       <div className="temps">
         <p className="max-temp">{Number(data.maxTemp).toFixed(0)}<span>°C</span></p>
         <p className="min-temp">{Number(data.minTemp).toFixed(0)}<span>°C</span></p>
